@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.center {
+    text-align: center;
+    line-height: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    letter-spacing: 0px;
+    font-size: 35px;
+    margin-top: 40px;
+}
+
+.button {
+    width: 600px; /* Ширина кнопки */
+    height: 350px; /* Высота кнопки */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    padding: 5px 30px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 15px; /* Скругленные углы */
+    box-shadow: 0 2px 10px rgba(216, 216, 216, 0.562);
+    transition: transform 0.3s ease;
+    text-align: center; /* Выравнивание текста по центру при переносе */
+    text-decoration: none;
+    word-wrap: break-word; /* Перенос длинных слов */
+    
+}
+
+.button:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.button img {
+    width: 150px;
+    height: 110px;
+    margin-right: 10px;
+}
+
+.social-button {
+    width: 150px; /* Ширина кнопки */
+    height: 150px; /* Высота кнопки */
+    border-radius: 20%; /* Круглые кнопки */
+    border: none; /* Убираем границу */ 
+    background-color: rgb(0, 83, 190);
+    display: flex; /* Используем flex для центрирования содержимого */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    box-shadow: 0 4px 8px rgba(224, 68, 159, 0.562); /* Добавление тени для эффекта */
+    cursor: pointer; /* Курсор в виде указателя при наведении */
+    transition: transform 0.3s ease;
+}
+
+.social-button img {
+    height: 100%; /* Высота будет автоматической для сохранения пропорций */
+    opacity: 1; /* Убедитесь, что изображение полностью непрозрачное */
+}
+
+.social-button:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+.social-image {
+    margin-top: 10px;
+}
+
+.container {
+    min-width: 1400px;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    gap: 20px; /* Отступ между кнопками */
+}
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Создаем две колонки */
+    gap: 10px; /* Уменьшаем отступ между колонками */
+    justify-content: center; /* Центрируем сетку по горизонтали */
+    align-items: center; /* Центрируем сетку по вертикали */
+    margin-top: 650px;
+    
+}
+h1.center {
+    margin-bottom: 20px;
+}
+
+.about_image {
+    float: right;
+    margin: 0 0 5px 5px;
+}
+
+.image-container {
+    text-align: center;
+    float: right;
+    margin: 0 0 5px 5px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 350px;
+    height: auto;
+    border: 3px solid #f59498;
+}
+
+.caption {
+    font-size: 12px;
+    color: #555;
+    margin-top: 10px;
+}

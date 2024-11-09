@@ -1,0 +1,88 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concave Image Uploader</title>
+    <link rel="stylesheet" href="real style.css">
+    <link rel="stylesheet" href="стиль.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div id="lamp-container" class="perspective-container-lamp">
+        <p>No image uploaded</p>
+    </div>
+
+    <div id="top-container" class="perspective-container-top">
+        <p>No image uploaded</p>
+    </div>
+
+    <div class="container">
+        <div id="left-container" class="perspective-container">
+            <p>No image uploaded</p>
+        </div>
+
+        <div id="right-container" class="perspective-container">
+            <p>No image uploaded</p>
+        </div>
+    </div>
+
+    <div id="bottom-container" class="perspective-container-bottom">
+        <p>No image uploaded</p>
+    </div>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar-lamp">
+    <div class="sidebar-resizer" id="sidebarResizerLamp"></div>
+    <button class="add-image-button" id="add-image-lamp">+</button>
+    <h3>Люстра (Галерея)</h3>
+    <div class="gallery" id="gallery-lamp"></div>
+</div>
+
+<div class="sidebar" id="sidebar-ceiling">
+    <div class="sidebar-resizer" id="sidebarResizerCeiling"></div>
+    <button class="add-image-button" id="add-image-top">+</button>
+    <h3>Потолок (Галерея)</h3>
+    <div class="gallery" id="gallery-top"></div>
+</div>
+
+<div class="sidebar" id="sidebar-common">
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+    <button class="add-image-button" id="add-image-common">+</button>
+    <h3>Стены (Общая галерея)</h3>
+    <div class="gallery" id="gallery-common"></div>
+</div>
+
+<div class="sidebar" id="sidebar-floor">
+    <div class="sidebar-resizer" id="sidebarResizerFloor"></div>
+    <button class="add-image-button" id="add-image-bottom">+</button>
+    <h3>Пол (Галерея)</h3>
+    <div class="gallery" id="gallery-bottom"></div>
+</div>
+
+<!-- Buttons to open/close sidebars -->
+
+<div class="button-container" id="rectangle">
+    <button class="open-sidebar-button" id="toggle-sidebar-lamp">Люстра</button>
+    <button class="open-sidebar-button" id="toggle-sidebar-ceiling">Потолок</button>
+    <button class="open-sidebar-button" id="toggle-sidebar-walls">Стены</button>
+    <button class="open-sidebar-button" id="toggle-sidebar-floor">Пол</button>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="imageModal">
+    <div class="modal-content">
+        <h3>Добавить изображение</h3>
+        <p class="red-bold-text">Исключительно в формате 1:1</p>
+        <input type="text" id="imageUrl" placeholder="Введите URL изображения в формате 1:1!">
+        <button id="submitImage">Добавить</button>
+        <button class="cancel-button" id="cancelImage">Отмена</button>
+    </div>
+</div>
+
+<script src="real script.js"></script>
+
+</body>
+</html>
